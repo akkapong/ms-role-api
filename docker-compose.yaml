@@ -9,7 +9,7 @@ services:
       - "27017"
     ports:
       - "27002:27017"
-    container_name: ms-role-api-mo
+    container_name: ms-role-api-mongo
 
   app:
     image: akkapong/php-nginx-phalcon-mongo:latest
