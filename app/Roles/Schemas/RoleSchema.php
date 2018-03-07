@@ -63,7 +63,7 @@ class RoleSchema extends SchemaProvider
             'updated_at' => $role->updated_at,
         ];
 
-        if (property_exists($role, 'permissions')) {
+        if (property_exists($role, 'permissions') && !empty($role->permissions)) {
             $datas['permissions'] = $this->formatPermission($role->permissions);
         }
 
