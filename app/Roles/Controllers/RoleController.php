@@ -15,7 +15,7 @@ class RoleController extends ControllerBase
 {
     //==== Start: Define variable ====//
     private $module = 'roles';
-    private $RoleService;
+    private $roleService;
     private $modelName;
     private $schemaName;
 
